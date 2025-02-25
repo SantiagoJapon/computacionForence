@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Mejorado con fallback moderno */
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0); /* Gradiente suave */
+    margin: 0;
+    padding: 20px; /* Padding más consistente */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.container {
+    width: 80%; /* Mantenido, pero adaptable */
+    max-width: 1200px; /* Límite superior para pantallas grandes */
+    margin: 50px auto; /* Centrado vertical y horizontal */
+    background: white;
+    padding: 30px; /* Más espacio interno */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más suave y profunda */
+    border-radius: 12px; /* Bordes redondeados modernos */
+    transition: all 0.3s ease; /* Transición suave para interacciones */
+}
+
+h1 {
+    color: #2c3e50; /* Tono más oscuro y profesional */
+    font-size: 2em; /* Tamaño más prominente */
+    margin-bottom: 20px; /* Espacio inferior consistente */
+    border-bottom: 3px solid #3498db; /* Línea decorativa azul */
+    padding-bottom: 10px; /* Espacio bajo la línea */
+    font-weight: 600; /* Peso más fuerte para destacar */
+    display: flex; /* Flex para alinear íconos si se usan */
+    align-items: center;
+    gap: 10px; /* Espacio entre ícono y texto */
+}
+
+.graph {
+    margin-top: 25px; /* Más espacio superior */
+    padding: 20px; /*_padding interno para los gráficos */
+    border: 1px solid #e0e0e0; /* Borde sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    background: #fff; /* Fondo blanco para contraste */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+    transition: transform 0.2s ease; /* Efecto sutil al interactuar */
+}
+
+/* Efecto hover para los gráficos */
+.graph:hover {
+    transform: translateY(-2px); /* Elevación ligera */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reducir padding en móviles */
+    }
+    .container {
+        width: 90%; /* Más ancho en pantallas pequeñas */
+        padding: 20px; /* Menos espacio interno */
+        margin: 20px auto; /* Menos margen superior/inferior */
+    }
+    h1 {
+        font-size: 1.5em; /* Tamaño reducido para móviles */
+    }
+    .graph {
+        padding: 15px; /* Menos padding en gráficos */
+    }
+}
